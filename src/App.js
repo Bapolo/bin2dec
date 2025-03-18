@@ -62,15 +62,16 @@ function App() {
   }
 
   return (
-      <div className = 'App container'>
-        <h1>{decimal}</h1>
-        {erro && <p style = {{color: "red", display: "flex", justifyContent: "center", gap: "5px"}}>{mensagemDeErro} <FaRegMeh /></p>}
-        <input 
-        type = "number" 
-        value = {input} 
-        onChange = { definirEntrada }
-        />
-      </div>
+    <div className = 'App container'>
+      <h2>Conversor Binário para Decimal</h2>
+      <h1>{decimal}</h1>
+      {erro && <p style = {{color: "red", display: "flex", justifyContent: "center", gap: "5px"}}>{mensagemDeErro} <FaRegMeh /></p>}
+      <input 
+      type = "number" 
+      value = {input} 
+      onChange = { definirEntrada }
+      />
+    </div>
   );
 }
 

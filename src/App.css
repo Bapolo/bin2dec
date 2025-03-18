@@ -32,7 +32,6 @@ body {
   background-color: var(--background);
   color: var(--text-primary);
   font-family: Arial, sans-serif;
-  height: 100vh;
 }
 
 .container
@@ -49,6 +48,15 @@ h1 {
   color: #c9d1d9;
   margin-bottom: 16px;
 }
+
+h2
+{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #c9d1d9;
+  margin-bottom: 16px;
+}
+
 
 input {
   background-color: #0d1117;

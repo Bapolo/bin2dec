@@ -41,6 +41,7 @@ function App() {
     }
 
     setInput(numero.replace(/[^01]/g, ""))
+
   }
 
   conversaoBinarioParaDecimal()
@@ -63,13 +64,14 @@ function App() {
 
   return (
     <div className = 'App container'>
-      <h2>Conversor Binário para Decimal</h2>
+      <h2>Conversor Binario para Decimal</h2>
       <h1>{decimal}</h1>
       {erro && <p style = {{color: "red", display: "flex", justifyContent: "center", gap: "5px"}}>{mensagemDeErro} <FaRegMeh /></p>}
       <input 
       type = "number" 
       value = {input} 
       onChange = { definirEntrada }
+      placeholder='Digite um binario'
       />
     </div>
   );
